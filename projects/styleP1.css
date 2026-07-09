@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #dadada;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: rgb(40, 40, 40);
+  }
+  
+  .project-header {
+    background-color: rgb(40, 40, 40);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .cover-image {
+    width: 100%;
+    max-height: 40svh;
+    object-fit: cover;
+    object-position: center 52%;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .project-tags {
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    color: #bababa;
+  }
+  
+  .project-meta {
+    margin-top: -2rem;
+    font-size: 0.9rem;
+    color: #bababa;
+  }
+  
+  .tag {
+    background-color: #d0e6f7;
+    color: #1d4f71;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+  }
+  
+  .description {
+    padding: 0 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    font-style: italic;
+    text-align: center;
+    
+  }
+  
+  .project-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: rgb(40, 40, 40);
+  }
+
+  main h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #dadada;
+  }
+  
+  ul {
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+  }
+
+  .project-content a {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+
+    color: #dadada;
+    border: 2px solid #dadada;
+    border-radius: 2rem;
+
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.project-content a:hover {
+    background-color: #dadada;
+    color: #201f1e;
+}
+
+  
