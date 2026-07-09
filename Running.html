@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Running</title>
+  <link rel="stylesheet" href="Running/running.css" />
+</head>
+
+<script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      const heroBottom = document.querySelector(".running-photo").getBoundingClientRect().bottom;
+  
+      if (heroBottom <= 300) {
+        header.style.top = "0";
+      } else {
+        header.style.top = "-90px";
+      }
+    });
+</script>
+
+<body>
+    <header>
+        <div class="header-content">
+          <h3><i class="fa-solid fa-person-running fa-2xl"></i></h3>
+          <nav>
+            <ul>
+              <li><a href="MainWeb.html">Science</a></li>
+              <li><a href="Photography.html">Photography</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+  <main>
+    <div class="running-photo">
+        <img class="cover" src="Running/portada.jpg" style="object-position: center 74%;" alt="Running cover image">
+        <h1>Running</h1>
+    </div>
+    <hr>
+    <section>
+      <h2>My Running Statistics</h2>
+      <p>Since 2023 I decided to track my progress by saving my stats. This allowed me to create plots like the following, showing the kilometers ran each day.</p>
+      <img src="Running/kmDiarios.png" alt="Daily running chart">
+      <figcaption></figcaption>
+
+      <p>A similar plot shows the training load on my body, calculated by convolving weekly volume with the previous four weeks. It helps me maintain high volume without overloading.</p>
+      <img src="Running/CargaSemanal.png" alt="Training load graph">
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>My Progress</h2>
+      <p>Here you can see my progress over the last years. The next chart shows how I’ve evolved in the 5000m race.</p>
+      <img src="Running/Progreso.png" alt="5000m progress graph" />
+
+      <p>I've converted race times into estimated oxygen consumption. This shows progress across all distances. I tend to improve faster in long distances, but my strengths seem to be in the shorter ones.</p>
+      <img src="Running/VO2max.png" alt="Oxygen consumption chart">
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Personal Bests</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Race</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1500 m</td><td>4:15</td><td>May 22, 2026</td><td>Utrecht, Netherlands</td></tr>
+          <tr><td>3000 m</td><td>9:02</td><td>Mar 7, 2026</td><td>Apeldoorn, Netherlands</td></tr>
+          <tr><td>5000 m</td><td>15:46</td><td>Jun 14, 2026</td><td>Groningen, The Netherlands</td></tr>
+          <tr><td>10000 m</td><td>34:20</td><td>March 15, 2025</td><td>Groningen, The Netherlands</td></tr>
+          <tr><td>3000 m SC</td><td>10:33</td><td>Nov 16, 2023</td><td>Temuco, Chile</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

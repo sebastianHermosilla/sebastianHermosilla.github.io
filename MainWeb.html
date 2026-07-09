@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Sebastián Hermosilla Canobra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    const heroBottom = document.querySelector(".hero").getBoundingClientRect().bottom;
+
+    if (heroBottom <= 300) {
+      header.style.top = "0";
+    } else {
+      header.style.top = "-100px";
+    }
+  });
+</script>
+
+<script src="projects/modal.js"></script>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h3><i class="fa-solid fa-wind fa-2xl"></i></h3>
+      <nav>
+        <ul>
+          <li><a href="Photography.html" rel="noopener noreferrer">Photography</a></li>
+          <!--<li><a href="Running.html">Running</a></li>--> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="animate" data-animate-type="translateY" data-animate-speed="-0.5" id="cielo" alt="sky"></div>
+    <img src="images/Hero.jpg" class="animate" top: -50vh; data-animate-type="translateX" id="cloud" style="object-position: center 90%;" alt="Cloud" >
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sebastián Hermosilla Canobra</h1>
+        <p class="section__text__p1">Atmospheric Dynamics · Exoplanet Astronomy · General Circulation Models</p>
+        <!--p class="section__text__p2">Give a look at some Science and Photos</p-->
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./images/CV_English.pdf')">See my CV </button>
+            <button class="btn btn-color-2" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Science</button>
+            <button class="btn btn-color-2" onclick="location.href='Photography.html'">Photography</button>
+            <!--<button class="btn btn-color-2" onclick="window.open('./images/CV_English.pdf')">See my CV </button>-->
+            <!--<button class="btn btn-color-2" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact me</button>-->
+        </div>
+        <div class="btn-container2">
+            <!--<button class="btn btn-color-2" onclick="location.href='Running.html'">Running</button>-->
+        </div>
+        <div class="socials-container">
+            <a href="https://www.linkedin.com/in/sebasti%C3%A1n-hermosilla-canobra-b19ba4255/" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/sebastianHermosilla" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://orcid.org/0009-0006-1319-7780" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+    <section id="about" class="two-column">
+      <div class="left">
+        <img src="images/profile2.jpg" alt="Sebastián Hermosilla" class="profile-pic">
+      </div>
+      <div class="right">
+        <div class="about-intro">
+          <h2>A bit of context</h2>
+          <p>My research explores the planetary atmospheres, both with numerical models and astronomical observations. I am particularly interested in understanding how rotation rate, stellar forcing and cloud feedback shape the diversity of climate states on terrestrial planets.</p>
+        </div>
+        <hr>
+        <h3>Current position</h3>
+        <div class="two-column2">
+          <div class="left">
+            <img src="images/utrecht_logo.png" alt="Utrecht University" class="work-image">
+          </div>
+          <div class="right">
+            <p><strong>Utrecht University</strong></p>
+            <ul>
+              <li>MSc Climate Physics student</li>
+            </ul>
+            <p class="gray"> Investigating the atmospheric circulation of Earth-like aquaplanets under different obliquities and rotation rates using ExoSPEEDY. Supervisor:  Henk Dijkstra </p>
+            <!--<p class="gray">You can take a look at: github</p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="projects" class="projects">
+      <h2>Main Projects</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card" data-project="projects/project1.html">
+          <img src="images/master_thesis.jpg"
+              style="object-position: center 50%;"
+              alt="Master Thesis Project">
+
+          <h3>Master Thesis</h3>
+
+          <div class="project-tags">
+            <span>Atm. Dynamics</span>
+            <span>GCM</span>
+            <span>Aquaplanet</span>
+          </div>
+
+          <p>
+            Investigating circulation patterns and cloud-cover fingerprints in aquaplanet atmospheres.
+          </p>
+        </div>
+
+
+        <div class="project-card" data-project="projects/project2.html">
+          <img src="images/bachelor_research.jpg"
+              style="object-position: center 60%;"
+              alt="Bachelor Research">
+
+          <h3>Bachelor Research</h3>
+
+          <div class="project-tags">
+            <span>Solar System</span>
+            <span>Transits</span>
+            <span>Telescope</span>
+          </div>
+
+          <p>
+            Observational astronomy: planetary transits, asteroid tracking, and Solar System studies.
+          </p>
+        </div>
+
+
+        <div class="project-card" data-project="projects/project3.html">
+          <img src="images/master_summary.jpg"
+              style="object-position: center 50%;"
+              alt="Master Summary">
+
+          <h3>Summary of Master's Program</h3>
+
+          <div class="project-tags">
+            <span>Climate Physics</span>
+            <span>Study</span>
+            <span>Text</span>
+          </div>
+
+          <p>
+            An overview of the topics covered throughout the Climate Physics Master's programme.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <div class="publication-card">
+
+        <h3>
+          HiDef Neighbors: Solar System Objects as Exoplanet Analogs.
+          <span>I. Gaseous Objects</span>
+        </h3>
+
+        <p class="publication-meta">
+          Giovannina M. Mansir, Patricio M. Rojo,
+          <strong>Sebastián Hermosilla Canobra</strong>, et al.
+          ·
+          <em>Astronomy &amp; Astrophysics</em>
+          <strong>707</strong>, A325 (2026)
+        </p>
+
+        <a class="doi-link"
+          href="https://doi.org/10.1051/0004-6361/202555769"
+          target="_blank"
+          rel="noopener noreferrer">
+          DOI: 10.1051/0004-6361/202555769
+        </a>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+
+        <h2>Get in touch</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <strong>Email</strong>
+                    <p>
+                        <a href="mailto:s.i.hermosillacanobra@students.uu.nl" rel="noopener noreferrer">
+                            s.i.hermosillacanobra@students.uu.nl
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <strong>Location</strong>
+                    <p>Utrecht, The Netherlands</p>
+                </div>
+            </div>
+
+
+            <div class="contact-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                    <strong>Affiliation</strong>
+                    <p>Utrecht University</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contact-socials">
+
+            <a href="https://www.linkedin.com/in/sebasti%C3%A1n-hermosilla-canobra-b19ba4255/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/sebastianHermosilla" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://orcid.org/0009-0006-1319-7780" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-orcid"></i>
+                ORCID
+            </a>
+
+        </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Sebastián Hermosilla Canobra</p>
+  </footer>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+</body>
+</html>

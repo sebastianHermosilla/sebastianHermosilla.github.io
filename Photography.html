@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Photography</title>
+  <link rel="stylesheet" href="Photography/photography.css" />
+</head>
+
+<script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      const heroBottom = document.querySelector(".first-photo").getBoundingClientRect().bottom;
+  
+      if (heroBottom <= 300) {
+        header.style.top = "0";
+      } else {
+        header.style.top = "-90px";
+      }
+    });
+</script>
+
+<body>
+
+<header>
+        <div class="header-content">
+          <h3><i class="fa-solid fa-photo-film fa-2xl" ></i></h3>
+          <nav>
+            <ul>
+              <li><a href="MainWeb.html">Science</a></li>
+              <!--<li><a href="Running.html">Running</a></li>-->
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+<main>
+  <div class="first-photo">
+        <img class="cover" src="Photography/head.jpg" style="object-position: center 74%;" alt="Running cover image">
+        <h1>Photography</h1>
+    </div>
+    <hr>
+
+  <section class="intro">
+    <p>
+      Since 2020, I’ve been taking nature photos with my analog camera. Over the past years, I’ve learned to work without instant feedback, without a light meter, and without automation. Each photograph is the result of attention, patience, and being present.
+    </p>
+  </section>
+
+  <!-- SECTION 1 -->
+  <section class="photo-block">
+    <div class="block-left">
+      <h3>The Light</h3>
+      <p>
+        Because my camera has neither a light meter nor automatic settings, understanding the light and choosing the right exposure for each environment is essential. Without immediate feedback, every shot becomes a moment of full attention and intention. 
+      </p>
+      <img src="Photography/light1.jpg" alt="Light horizontal">
+    </div>
+    <div class="block-right">
+      <img src="Photography/light2.jpg" alt="Light vertical">
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="photo-block">
+    <div class="block-left">
+      <h3>The Moment</h3>
+      <p>
+        With only 36 exposures per roll of film, every shot counts. You learn to choose your moments carefully. On top of that, having the camera ready, with the right settings dialed in, is essential to capturing the emotion of a fleeting moment.
+      </p>
+      <img src="Photography/moment1.jpg" alt="Moment horizontal">
+    </div>
+    <div class="block-right">
+      <img src="Photography/moment2.jpg" alt="Moment vertical">
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="photo-block">
+    <div class="block-left">
+      <h3>The Arrival</h3>
+      <p>
+        As my focus is nature photography, one of the biggest challenges is simply getting to the right place. That often means carrying everything on my back, the camera, food, and sleeping bag, for days at a time. All of this, while making sure to leave no trace of my presence behind.
+      </p>
+      <img src="Photography/arrival1.jpg" alt="Arrival horizontal">
+    </div>
+    <div class="block-right">
+      <img src="Photography/arrival2.jpg" alt="Arrival vertical">
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="collections">
+    <h3>Places that have inspired me</h3>
+    <ul>
+      <li>Patagonia <span>Sections in progress</span></li>
+      <li>The Andes <span>Sections in progress</span></li>
+      <li>Chilean Coastline <span>Section in progress</span></li>
+      <li>Northern Chile <span>Section in progress</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="photo-footer">
+  <p>© 2025 Sebastián Hermosilla</p>
+</footer>
+
+</body>
+</html>
